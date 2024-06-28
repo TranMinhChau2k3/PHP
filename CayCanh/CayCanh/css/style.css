@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+
+header {
+    background-image: url(../image/web/thiet-ke-cua-hang-cay-canh-mini-5.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    height: 300px;
+    width: 100%;
+
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: auto;
+    /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: auto;
+    /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#search {
+    padding: 5px 0;
+    float: right;
+}
+
+#search form {
+    display: flex;
+    align-items: center;
+}
+
+#search input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 290px;
+    transition: border-color 0.3s ease;
+}
+
+#search input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+#search input[type="submit"] {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style the footer */
+
+footer {
+    background-image: url(../image/web/thiet-ke-cua-hang-cay-canh-mini-5.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+#menu li {
+    width: 100%;
+    height: auto;
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 1em;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: start;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+/* Menu List Items Hover */
+#menu li:hover {
+    background: #CDE2CD;
+    color: #333;
+}
+
+/* Menu List Items Links */
+#menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: color 0.3s ease;
+}
+
+/* Menu List Items Links Hover */
+#menu li:hover a {
+    color: #000;
+}
+
+.list_sp {
+    width: 100%;
+}
+
+.list_sp {
+    border-collapse: separate;
+    /* Đảm bảo các ô bảng không dính liền nhau */
+    border-spacing: 10px;
+}
+
+.sp {
+    text-align: center;
+    border: 0.25px solid rgb(211, 206, 206);
+}
+
+:hover.sp {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.gia {
+    color: red;
+}
+
+tr td {
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
